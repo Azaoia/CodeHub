@@ -2,6 +2,8 @@
     * {
         box-sizing: border-box;
     }
+.b-top{border-top: 1px solid #e9d5ff;}
+.b-bottom{border-bottom: 1px solid #e9d5ff;}
 
     body {
         margin: 0;
@@ -50,7 +52,10 @@
     }
 
     .color {
-        color: #7c3aed !important;
+        background: linear-gradient(135deg, #feda77 0%, #dd2a7b 40%, #7c3aed 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
 
     .red {
@@ -193,7 +198,6 @@
     .section,
     .list form,
     .menu-section,
-    .perfil,
     .jumbo,
     .chpass {
         background: #fff;
@@ -202,9 +206,11 @@
         margin-bottom: 12px;
     }
 
+.chpass{margin:16px 10px}
+
     .section,
     .list form,
-    .chpass {
+    .chpass{
         padding: 8px 12px;
     }
 
@@ -313,10 +319,13 @@
         border: 1px solid #e9d5ff;
         padding: 8px 14px;
         border-radius: 16px;
-        color: #7c3aed;
         text-decoration: none;
         margin: 6px 0;
         white-space: nowrap;
+        background: linear-gradient(135deg, #feda77 0%, #dd2a7b 40%, #7c3aed 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
 
     /* Navegação inferior */
@@ -348,8 +357,13 @@
     }
 
     .nav a:hover {
-        color: #7c3aed;
+        background: linear-gradient(135deg, #feda77 0%, #dd2a7b 40%, #7c3aed 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
+
+   .nav a:hover svg{color: #7c3aed} 
 
     .nav a.active {
         background-color: #7c3aed;
@@ -367,9 +381,11 @@
     .tabs {
         background: #fff;
         border-bottom: 1px solid #e9d5ff;
+border-top: 1px solid #e9d5ff;
         text-align: center;
         display: table;
         width: 100%;
+       margin-top: 8px;
     }
 
     .tabs a {
@@ -418,11 +434,11 @@
     }
 
     /* Container principal */
-    .container {
-        padding: 10px;
+    main {
         margin: 100px auto 60px;
         max-width: 660px;
     }
+   .container{padding:10px}
 
     /* Formulários */
     .login {
@@ -557,6 +573,10 @@
     }
 
     /* Posts e mídia */
+.post,.section2{background-color:#fff;
+border-bottom: 1px solid #e9d5ff;
+padding:8px 12px;
+} 
     .post-head,
     .media {
         display: table;
@@ -601,6 +621,7 @@
         padding: 6px 0 6px 48px;
         line-height: 1.4;
         font-size: 15px;
+        word-break: break-all;
     }
 
     .tracked {
@@ -614,8 +635,8 @@
 
     .post-body img {
         width: auto;
-        max-width: 100%;
-        height: 240px;
+        width: 100%;
+        height: 260px;
         object-fit: cover;
         border: 1px solid #e9d5ff;
         border-radius: 4px;
@@ -765,6 +786,7 @@
     .perfil {
         padding-bottom: 15px;
         overflow: hidden;
+        background:#fff;
     }
 
     .p-cover {
@@ -794,7 +816,7 @@
         height: 100px;
         border-radius: 50%;
         padding: 4px;
-        background: #fff;
+        background: linear-gradient(135deg, #feda77 0%, #dd2a7b 40%, #7c3aed 100%);
     }
 
     .change-avatar {
@@ -881,8 +903,11 @@
 
     .menu-item i {
         width: 20px;
-        color: #7c3aed;
         margin-right: 8px;
+        background: linear-gradient(135deg, #feda77 0%, #dd2a7b 40%, #7c3aed 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
 
     .menu-item .badge {
@@ -891,11 +916,7 @@
 
     .menu-item.danger {
         color: #dc2626;
-    }
-
-    .menu-item.danger i {
-        color: #dc2626;
-    }
+   }
 
     /* Paginação */
     .page {
@@ -910,14 +931,19 @@
         margin: 0 4px;
         border: 1px solid #e9d5ff;
         border-radius: 4px;
-        background: #fff;
-        color: #7c3aed;
     }
+  
+   .page a{background: linear-gradient(135deg, #feda77 0%, #dd2a7b 40%, #7c3aed 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+} 
 
-    .page span {
-        background: #7c3aed;
+    .page span{
+        background-color: #7c3aed;
         color: #fff;
         border-color: #7c3aed;
+        background-image: linear-gradient(135deg, #feda77 0%, #dd2a7b 40%, #7c3aed 100%);
     }
 
     /* Badges */
@@ -1332,6 +1358,8 @@
         height: 60px;
         border-radius: 50%;
         object-fit: cover;
+        background: linear-gradient(135deg, #feda77 0%, #dd2a7b 40%, #7c3aed 100%);
+        padding: 3px;
     }
 
     .media .media-body {
@@ -1470,12 +1498,13 @@
         height: 60px;
         text-align: center;
         padding: 8px 0;
-        background: #7c3aed;
+        background-color: #7c3aed;
         color: #fff;
         font-size: 38px;
         position: absolute;
         bottom: 0;
         left: 0;
+        background: linear-gradient(135deg, #feda77 0%, #dd2a7b 40%, #7c3aed 100%);
     }
 
     .story a u {
@@ -1528,4 +1557,4 @@
         transform: rotate(45deg);
         text-align: center;
         text-decoration: none;
-    
+   } 
